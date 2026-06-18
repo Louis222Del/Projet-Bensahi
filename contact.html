@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Bensahi Ilham</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">♥</span>
+                <div class="logo-text">
+                    <span class="logo-title">Bensahi Ilham</span>
+                    <span class="logo-subtitle">Cardiologue · Rythmologue</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="a-propos.html" class="nav-link">À propos</a>
+                <a href="specialites.html" class="nav-link">Spécialités</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="contact.html" class="nav-btn">Prendre RDV</a>
+            </nav>
+            <button class="burger" id="burger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-link">Accueil</a>
+            <a href="a-propos.html" class="mobile-link">À propos</a>
+            <a href="specialites.html" class="mobile-link">Spécialités</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+            <a href="contact.html" class="mobile-link mobile-rdv">Prendre RDV</a>
+        </div>
+    </header>
+
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <p class="section-eyebrow">Nous contacter</p>
+            <h1 class="page-hero-title">Contact & Rendez-vous</h1>
+            <p class="page-hero-desc">Prenez rendez-vous ou contactez le cabinet du Professeur Bensahi Ilham pour toute demande d'information.</p>
+        </div>
+    </section>
+
+
+    <section class="contact-section">
+        <div class="contact-container">
+
+
+            <div class="contact-infos">
+                <p class="section-eyebrow">Informations</p>
+                <h2 class="contact-title">Nous trouver</h2>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h3 class="info-label">Adresse</h3>
+                            <p class="info-text">Casablanca, Maroc<br>Adresse complète à renseigner</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h3 class="info-label">Téléphone</h3>
+                            <p class="info-text"><a href="tel:+212XXXXXXXX">+212 XX XX XX XX</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <h3 class="info-label">Email</h3>
+                            <p class="info-text"><a href="mailto:contact@bensahi-cardio.ma">contact@bensahi-cardio.ma</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-content">
+                            <h3 class="info-label">Horaires</h3>
+                            <p class="info-text">
+                                Lundi — Vendredi : 9h00 – 18h00<br>
+                                Samedi : 9h00 – 13h00<br>
+                                Dimanche : Fermé
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contact-form-wrap">
+                <p class="section-eyebrow">Formulaire</p>
+                <h2 class="contact-title">Prendre rendez-vous</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="xx xx xx xx xx" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="motif">Motif de consultation</label>
+                        <select id="motif" name="motif" required>
+                            <option value="" disabled selected>Choisissez un motif</option>
+                            <option value="cardiologie">Cardiologie générale</option>
+                            <option value="rythmologie">Rythmologie</option>
+                            <option value="interventionnel">Rythmologie interventionnelle</option>
+                            <option value="suivi">Suivi cardiologique</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Décrivez brièvement votre demande..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Envoyer la demande</button>
+                    <p class="form-note">Notre équipe vous recontactera dans les plus brefs délais pour confirmer votre rendez-vous.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="carte-section">
+        <div class="section-header">
+            <p class="section-eyebrow">Localisation</p>
+            <h2 class="section-title">Nous rendre visite</h2>
+        </div>
+        <div class="carte-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7!2d-7.6755824!3d33.5501543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda62dc6f3636a45%3A0x315c326ae7fc91bd!2sProfesseur%20Ilham%20Bensahi%20Rythmologue%20Interventionnel%20Cardiologue!5e0!3m2!1sfr!2sma!4v1234567890"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Cabinet Pr Bensahi Ilham">
+            </iframe>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-icon">♥</span>
+                <div>
+                    <span class="footer-title">Bensahi Ilham</span>
+                    <span class="footer-subtitle">Cardiologue · Rythmologue Interventionnelle</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <a href="specialites.html">Spécialités</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <p>📍 Casablanca, Maroc</p>
+                <p>📞 +212 XX XX XX XX</p>
+                <p>✉️ contact@bensahi-cardio.ma</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Bensahi Ilham — Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
