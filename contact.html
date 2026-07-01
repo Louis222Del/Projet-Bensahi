@@ -134,7 +134,7 @@
                     <p class="form-note">Notre équipe vous recontactera dans les plus brefs délais pour confirmer votre rendez-vous.</p>
                 </form>
             </div>
-
+            
         </div>
     </section>
 
@@ -186,5 +186,16 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("status") === "succes") {
+        alert("Votre demande a bien été envoyée. Nous vous recontacterons rapidement.");
+    }
+    if (params.get("status") === "erreur") {
+        alert("Une erreur est survenue. Veuillez nous contacter par téléphone.");
+    }
+    </script>
+    
 </body>
 </html>
